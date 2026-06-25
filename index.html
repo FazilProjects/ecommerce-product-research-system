@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecommerce Product Research System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <p class="tagline">Ecommerce Research Project</p>
+    <h1>Ecommerce Product Research System</h1>
+    <p class="hero-text">
+      A practical dashboard for analyzing ecommerce products, supplier details,
+      profit potential, competition level, demand level, and product risk.
+    </p>
+  </header>
+
+  <main class="container">
+    <section class="card input-card">
+      <h2>Product Research Input</h2>
+      <p>Enter product and supplier details to generate a structured product research analysis.</p>
+
+      <label for="productName">Product Name</label>
+      <input id="productName" type="text" placeholder="Example: Wireless phone charger" />
+
+      <label for="supplierName">Supplier Name</label>
+      <input id="supplierName" type="text" placeholder="Example: TeemDrop, AliExpress, Zendrop" />
+
+      <label for="costPrice">Product Cost Price ($)</label>
+      <input id="costPrice" type="number" placeholder="Example: 12" />
+
+      <label for="sellingPrice">Expected Selling Price ($)</label>
+      <input id="sellingPrice" type="number" placeholder="Example: 29" />
+
+      <label for="shippingCost">Shipping Cost ($)</label>
+      <input id="shippingCost" type="number" placeholder="Example: 4" />
+
+      <label for="demandLevel">Demand Level</label>
+      <select id="demandLevel">
+        <option value="">Select demand level</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+
+      <label for="competitionLevel">Competition Level</label>
+      <select id="competitionLevel">
+        <option value="">Select competition level</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+
+      <label for="riskNotes">Risk Notes</label>
+      <textarea id="riskNotes" placeholder="Example: slow shipping, weak supplier reviews, brand restriction risk"></textarea>
+
+      <button onclick="analyzeProduct()">Analyze Product</button>
+    </section>
+
+    <section class="card output-card">
+      <h2>Product Research Analysis</h2>
+
+      <div class="metric-grid">
+        <div class="metric blue">
+          <h3>Estimated Profit</h3>
+          <p id="profitOutput">$0</p>
+        </div>
+
+        <div class="metric green">
+          <h3>Profit Margin</h3>
+          <p id="marginOutput">0%</p>
+        </div>
+
+        <div class="metric yellow">
+          <h3>Product Score</h3>
+          <p id="scoreOutput">0/100</p>
+        </div>
+
+        <div class="metric red">
+          <h3>Risk Level</h3>
+          <p id="riskOutput">Not analyzed</p>
+        </div>
+      </div>
+
+      <div class="output-box">
+        <h3>Research Summary</h3>
+        <p id="summaryOutput">Your product research summary will appear here.</p>
+      </div>
+
+      <div class="output-box">
+        <h3>Listing Title Idea</h3>
+        <p id="titleOutput">Your product title idea will appear here.</p>
+      </div>
+
+      <div class="output-box">
+        <h3>Final Decision</h3>
+        <p id="decisionOutput">Final product decision will appear here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built by Fazil Waseem as a practical ecommerce and product research portfolio project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

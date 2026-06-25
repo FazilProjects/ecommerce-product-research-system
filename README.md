@@ -8,7 +8,7 @@ https://fazilprojects.github.io/ecommerce-product-research-system/
 
 ## Screenshot
 
-![Ecommerce Product Research System Demo](ecommerce-dashboard-demo.png)
+![Ecommerce Product Research System Demo](ecommerce-dashboard-demo.png.png)
 
 ## Project Overview
 
